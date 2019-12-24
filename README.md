@@ -18,6 +18,7 @@ Web application is created using Flask(python).
   <li>pip install python-vlc</li>
   <li>pip install Flask-Uploads</li>
   <li>pip install Flask-Bootstrap4</li>
+  <li>https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v4.0.0.20181030.exe</li>
 </ul>
 <br>
 <u>Screenshots of the web-application</u><br>
