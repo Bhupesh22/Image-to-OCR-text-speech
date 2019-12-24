@@ -20,7 +20,7 @@ Web application is created using Flask(python).
   <li>pip install Flask-Bootstrap4</li>
 </ul>
 <br>
-<u>Screenshots</u><br>
-<img src="">
-<img src="">
-<img src="">
+<u>Screenshots of the web-application</u><br>
+<img src="screenshots/1.png"><br>
+<img src="screenshots/2.png"><br>
+<img src="screenshots/3.png"><br>
