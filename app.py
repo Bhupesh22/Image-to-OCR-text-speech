@@ -4,7 +4,6 @@ from flask_uploads import UploadSet,configure_uploads,ALL,DATA
 import vlc
 import pytesseract
 from PIL import Image
-import pyttsx3 as px
 from gtts import gTTS
 from googletrans import Translator
 
