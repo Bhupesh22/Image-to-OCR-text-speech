@@ -1,6 +1,6 @@
-<b><h1><I>Image to OCR text & Speech Application using python</I></h2></b>
+<b><h1><I>Image to OCR text & Speech Application using Python</I></h2></b>
 <hr>
-Web application is created using Flask(python).
+Web application is created using Flask microframework.
 <hr>
 <b>Python Libraries used here are</b><br><br>
 <ul>
