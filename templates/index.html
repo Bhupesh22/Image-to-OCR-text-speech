@@ -1,0 +1,48 @@
+{%extends "bootstrap/base.html"%}
+{%block content%}
+<style type="text/css">
+    body{font:15px/1.5 Arial, Helvetica,sans-serif;}
+    img{
+  		max-width:180px;
+	}
+	input[type=file]{
+		padding:10px;
+		background:#ffff66;}
+ </style>
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static',filename='css/styles.css')}}">
+{% endblock %}
+<div class="jumbotron">
+	<div class="container">
+		<h1 class="display-3"><b><u>Image to OCR Text & Speech</u></b></h1>
+		<p>Converting Image to text and providing voice feedback based on languages</p>
+
+		<p><a href="{{url_for('index')}}" type="button" class="btn btn-primary">Refresh</a></p>
+	</div>
+</div>
+<div class="container">
+	<form method="POST" class="form-group" enctype="multipart/form-data" action="{{url_for('imgupload')}}">
+		<div class="container">
+			<input type="file" name="imgupload" onchange="loadFile(event)">
+			<img id="output" src="https://via.placeholder.com/500"alt="your image" />
+		</div>
+		<br>
+		<div class="container">
+			<input type="submit" class="btn btn-primary mb-2">
+			<input type="reset" name="Reset" class="btn btn-danger mb-2">
+		</div>
+	</form>
+</div>
+<br>
+<div class="container">
+	<p>{{text}}</p>
+</div>
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+{%endblock%}
