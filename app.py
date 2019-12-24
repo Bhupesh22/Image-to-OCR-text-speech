@@ -24,7 +24,7 @@ def imgupload():
 		file=request.files['imgupload']
 		x=file.filename
 		img=Image.open(file)
-		pytesseract.pytesseract.tesseract_cmd="C:/Program Files/Tesseract-OCR/tesseract.exe"
+		pytesseract.pytesseract.tesseract_cmd="C:/Program Files/Tesseract-OCR/tesseract.exe" #(path where tesseract application is installed)
 		result=pytesseract.image_to_string(img)
 		p=Translator()
 		k=p.translate(result,dest='spanish')
